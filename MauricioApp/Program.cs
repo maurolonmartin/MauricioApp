@@ -7,6 +7,8 @@ namespace MauricioApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(Saludar());
+
             Persona mauricio = new Persona("Mauricio","Londoño", new DateTime(1979, 10, 31));
             Persona juan = new Persona("Juan", "Mira", new DateTime(1987, 4, 22));
 
@@ -23,9 +25,7 @@ namespace MauricioApp
             //    "La moto de Mauricio es de marca: " + mauricio.Moto.Marca +
             //    ", el cilindraje es: " + mauricio.Moto.Cilindraje +
             //    " y el modelo es: " + mauricio.Moto.Modelo);
-            //Console.ReadLine();
-
-       
+            //Console.ReadLine();       
         }
 
         private static void VerificarOpulencia(Persona persona)
@@ -42,6 +42,11 @@ namespace MauricioApp
 
             Console.WriteLine(persona.Nombre + " se presenta: " + persona.Presentarse());
             Console.ReadLine();
+        }
+
+        private static string Saludar()
+        {
+            return "Hola que mas!!!";
         }
     }
 }
